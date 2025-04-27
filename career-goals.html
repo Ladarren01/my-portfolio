@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ladarren Owens - Career Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ladarren Owens</h1>
+        <nav>
+            <ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="cover-letter.html">Cover Letter</a></li>
+                <li><a href="career-goals.html">Career Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Career Goals</h2>
+            <p>As a Software Engineer, I plan to work on cutting-edge technology and contribute to the development of efficient systems. My immediate goal is to achieve the position of Staff Sergeant within the Air Force, contributing to my leadership and technical growth.</p>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone Number:</label>
+                <input type="phone" id="phone" name="phone">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <label for="contact-time">Best Contact Time:</label>
+                <input type="radio" id="am" name="contact-time" value="am"><label for="am">AM</label>
+                <input type="radio" id="pm" name="contact-time" value="pm"><label for="pm">PM</label>
+                <input type="radio" id="anytime" name="contact-time" value="anytime"><label for="anytime">Anytime</label>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <footer>
+            <p>Last Updated: <div id="current-date"></div></p>
+        </footer>
+    </main>
+    <script>
+        document.getElementById('current-date').innerText = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
